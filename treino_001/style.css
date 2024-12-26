@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ketchun';
+    src: url('fontes/Ketchum.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('fontes/Pokemon\ Classic.ttf') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #F2CA50;
+    --cor02: #2481A6;
+    --cor03: #034C8C;
+    --cor04: #022859;
+    --cor05: #010626;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Ketchun';
+    --fonte-titulo: 'Pokemon';
+}
+
+body {
+    background-color: var(--cor02);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor03));
+    min-height: 200px;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: 'Ketchun', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor01);
+    font-size: 4em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.289);
+}
+
+header > p {
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    color: var(--cor01);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.285);
+}
+
+nav {
+    background-color: var(--cor05);
+    padding: 20px;
+}
+
+nav > a {
+    color: var(--cor01);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor03);
+    color: var(--cor05);
+
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor05);
+    font-family: 'Pokemon', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+main h2 {
+    color: var(--cor01);
+    font-family: 'Pokemon', sans-serif;
+    font-weight: bolder;
+    font-family: 1.3em;
+    background-image: linear-gradient(to right, var(--cor03), transparent);
+    text-indent: 10px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main img{
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor02);
+    padding: 20px;
+    margin: 0px -10px 0px -10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+aside > h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor01);
+}
+
+aside > ul {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor04);
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    color: var(--cor01);
+}

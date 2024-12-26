@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Tech';
+    src: url(fontes/batmfa__.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #0FC2C0;
+    --cor02: #0CABA8;
+    --cor03: #008F8C;
+    --cor04: #015958;
+    --cor05: #023535;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', serif;
+    --fonte-titulo: 'Tech', sans-serif
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor01));
+    min-height: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.285);
+}
+
+header > p {
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.285);
+}
+
+nav {
+    background-color: var(--cor05);
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--cor01);
+    color: var(--cor05);
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+main h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor05);
+    font-size: 1.8em;
+    font-weight: normal;
+
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor05);
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+main img {
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor03);
+    padding: 10px;
+    margin: 5px -10px 0px -10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+aside > h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+}
+
+aside > ul {
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: var(--cor05);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+}
