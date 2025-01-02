@@ -53,14 +53,14 @@ header > p {
 
 nav {
     background-color: var(--cor05);
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
 nav > a {
     font-family: Helvetica, sans-serif;
     color: #B548E0;
-    margin: 30px;
+    margin: 20px;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
