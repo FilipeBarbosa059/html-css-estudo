@@ -86,16 +86,33 @@ main {
 main  h2 {
     color: var(--cor03);
     font-family: var(--fonte-titulo);
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
-main p {
+main h3 {
     color: var(--cor03);
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     font-weight: bold;
 }
 
+main p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+}
+
 main img {
     width: 100%;
+}
+
+footer {
+    background-color: var(--cor05);
+    color: var(--cor03);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    font-family: var(--fonte-padrao);
 }
